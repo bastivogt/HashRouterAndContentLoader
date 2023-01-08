@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        footer {
+            padding: 80px 0px;
+            background-color: black;
+        }
+        audio {
+            width: 100%;
+        }
+        .inside {
+            padding: 80px 20px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .navigation {
+            background-color: beige;
+        }
+
+        #mail {
+            font-weight: bold;
+        }
+        #content, main, .container {
+            transition: all .5s ease;
+        }
+        body {
+            transition: opacity .5s ease;
+        }
+        .hidden {
+            opacity: 0;
+        }
+        .visible {
+            opacity: 1;
+        }
+    </style>
+
+    <title>BaseHashRouter</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navigation">
+            <div class="inside">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#Fail">Fail</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <main>
+            <div class="inside" id="content"></div>
+        </main>
+    </div>
+    <footer>
+        <div class="inside">
+            <audio src="./Fiocco - The Spirit (Extended Vocal Mix).mp3" controls>Keine Audio vorhanden</audio>
+        </div>
+    </footer>
+  
+    <script src="./app.js" type="module"></script>
+</body>
+</html>
